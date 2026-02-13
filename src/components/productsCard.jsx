@@ -4,8 +4,9 @@ export default function productCard({ product }) {
     return (
             <div className="product-card" >
               <img
+              
                 src={product.image}
-                alt={product.name}
+              
                 className="product-card-image"
                 
               />
@@ -13,7 +14,7 @@ export default function productCard({ product }) {
                 <h3 className="product-card-name">{product.name}</h3>
                 <p className="product-card-price">{product.price}</p>
                 <div className="product-card-actions">
-                 <Link className="btn btn-secondary">View Details</Link>
+                 <Link  className="btn btn-secondary">View Details</Link>
                  <button className="btn btn-primary" >Add To Cart</button>
                 </div>
 
